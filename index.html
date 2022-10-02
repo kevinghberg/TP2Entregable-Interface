@@ -11,25 +11,39 @@
 <body>
     <div>
         <div>
-            <canvas id="canvas" width="500" height="500" style="border: 1px solid black"></canvas>
+            <canvas id="canvas" width="500" height="500" style="border: 1px solid black">
+            <img id="img">
+            </canvas>
             <div>
-                <div>
-                    <button class="button" id="lapiz">Lapiz</button>
-                    <input type="color" id="colorLapiz">
-                    <input type="range" min="1" max="10" step="1" id="grosorLapiz">
-                </div>
+                <button class="button" id="lapiz">Lapiz</button>
+                <input type="color" id="colorLapiz">
+                <input type="range" min="1" max="10" step="1" id="grosorLapiz">
 
-                <div>
-                    <button class="button" id="borrar">Goma</button>
-                </div>
-                
-                <div>
-                    <button class="button" id="limpiar">Clear</button>
-                </div>
+                <button class="button" id="borrar">Goma</button>
+
+                <button class="button" id="limpiar">Clear</button>
+            </div>
+
+            <div>
+              <input type="file" id="uploader">
+              <button id="guardar">Guardar</button>
+            </div>
+
+
+            <div>
+                <button class="Button" id="binario" type="button">Filtro Binario</button>
+                <button class="Button" id="sepia" type="button">Filtro Sepia</button>
+                <button class="Button" id="negativo" type="button">Filtro Negativo</button>
+                <button class="Button" id="brillo" type="button">Filtro de Brillo</button>
+
+        
+                <button class="Button" id="borrarFiltro" type="button">Quitar filtros</button>
             </div>
 
         </div>
     </div>
+    
+
 </body>
 <script src="js.js"></script>
 
