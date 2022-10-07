@@ -5,44 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PAINT</title>
+    <link rel="stylesheet" href="style.css"> 
+
 </head>
 
 <body>
     <div>
-        <div>
-            <canvas id="canvas" width="500" height="500" style="border: 1px solid black">
-            <img id="img">
+
+        <div class="paint">
+            <canvas id="canvas" width="1480" height="700" style="border: 1px solid black">
+
             </canvas>
-            <div>
-                <button class="button" id="lapiz">Lapiz</button>
-                <input type="color" id="colorLapiz">
-                <input type="range" min="1" max="10" step="1" id="grosorLapiz">
 
-                <button class="button" id="borrar">Goma</button>
+            <div class="containerHerramientas">
+                <H2>HERRAMIENTAS</H2>
 
-                <button class="button" id="limpiar">Clear</button>
+
+                <div>
+                    <button class="button-62" role="button" id="lapiz">Lapiz</button>
+                    <input class="inputColor" type="color" id="colorLapiz">
+
+                    <input type="range" min="1" max="10" step="1" id="grosorLapiz">
+                    <br>
+                    <button class="button-62" role="button" id="borrar">Goma</button>
+                    <br>
+                    <button class="button-62" role="button" id="limpiar">Clear</button>
+                </div>
+
+                <H2>ARCHIVO</H2>
+                <div>
+                    <input type="file" id="uploader">
+                    <button id="guardar">Guardar</button>
+                </div>
+
+                <h2>FILTROS</h2>
+                <div class="botones">
+
+                    <button class="button-62" role="button" id="binario" type="button">Filtro Binario</button>
+                    <button class="button-62" role="button" id="sepia" type="button">Filtro Sepia</button>
+                    <button class="button-62" role="button" id="negativo" type="button">Filtro Negativo</button>
+                    <button class="button-62" role="button" id="brillo" type="button">Filtro de Brillo</button>
+                    <button class="button-62" role="button" id="saturacion" type="button">Filtro de Saturacion</button>
+                    <button class="button-62" role="button" id="blur" type="button">Filtro de Blur</button>
+                    <button class="button-62" role="button" id="el+grande" type="button">Filtro DEL+GRANDE</button>
+                    <button class="button-62" role="button" id="borrarFiltro" type="button">Quitar filtros</button>
+                </div>
             </div>
-
-            <div>
-              <input type="file" id="uploader">
-              <button id="guardar">Guardar</button>
-            </div>
-
-
-            <div>
-                <button class="Button" id="binario" type="button">Filtro Binario</button>
-                <button class="Button" id="sepia" type="button">Filtro Sepia</button>
-                <button class="Button" id="negativo" type="button">Filtro Negativo</button>
-                <button class="Button" id="brillo" type="button">Filtro de Brillo</button>
-
-        
-                <button class="Button" id="borrarFiltro" type="button">Quitar filtros</button>
-            </div>
-
         </div>
     </div>
-    
+
+    <footer class="footer">
+        KEVIN GARCES HØYBERG ~ TP2 INTERFACE
+    </footer>
 
 </body>
 <script src="js.js"></script>
